@@ -357,7 +357,7 @@ namespace WGClient.WorldOfTanks
         ///Время окончания блокировки аккаунта
         ///</summary>
         [JsonProperty("ban_time")]
-        public int BanTime {get; set;}
+        public int? BanTime {get; set;}
 
         ///<summary>
         ///Идентификатор клана
@@ -375,7 +375,7 @@ namespace WGClient.WorldOfTanks
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Личный рейтинг
@@ -387,13 +387,13 @@ namespace WGClient.WorldOfTanks
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Время окончания последней игровой сессии
         ///</summary>
         [JsonProperty("logout_at")]
-        public int LogoutAt {get; set;}
+        public int? LogoutAt {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -405,7 +405,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления информации об игроке
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Приватные данные игрока
@@ -487,7 +487,7 @@ namespace WGClient.WorldOfTanks
         ///Срок действия премиум аккаунта
         ///</summary>
         [JsonProperty("premium_expires_at")]
-        public int PremiumExpiresAt {get; set;}
+        public int? PremiumExpiresAt {get; set;}
 
         ///<summary>
         ///Личные резервы.
@@ -529,7 +529,7 @@ namespace WGClient.WorldOfTanks
         ///Время окончания действия
         ///</summary>
         [JsonProperty("expiration_time")]
-        public int ExpirationTime {get; set;}
+        public int? ExpirationTime {get; set;}
 
         ///<summary>
         ///Статус личных резервов. Допустимые значения:
@@ -595,7 +595,7 @@ namespace WGClient.WorldOfTanks
         ///Время окончания аренды
         ///</summary>
         [JsonProperty("expiration_time")]
-        public int ExpirationTime {get; set;}
+        public int? ExpirationTime {get; set;}
 
         ///<summary>
         ///Идентификатор техники в аренде
@@ -611,7 +611,7 @@ namespace WGClient.WorldOfTanks
         ///Время окончания блокировки в чате
         ///</summary>
         [JsonProperty("chat_ban_time")]
-        public int ChatBanTime {get; set;}
+        public int? ChatBanTime {get; set;}
     }
 
 
@@ -3427,7 +3427,7 @@ namespace WGClient.WorldOfTanks
         ///Срок действия access_token
         ///</summary>
         [JsonProperty("expires_at")]
-        public int ExpiresAt {get; set;}
+        public int? ExpiresAt {get; set;}
     }
 
 
@@ -3605,13 +3605,13 @@ namespace WGClient.WorldOfTanks
         ///Дата окончания периода нейтралитета
         ///</summary>
         [JsonProperty("vacation_finish")]
-        public int VacationFinish {get; set;}
+        public int? VacationFinish {get; set;}
 
         ///<summary>
         ///Дата начала периода нейтралитета
         ///</summary>
         [JsonProperty("vacation_start")]
-        public int VacationStart {get; set;}
+        public int? VacationStart {get; set;}
 
         ///<summary>
         ///Информация о строениях по уникальным ключам их типов
@@ -4500,13 +4500,13 @@ namespace WGClient.WorldOfTanks
         ///Дата создания боя
         ///</summary>
         [JsonProperty("battle_creation_date")]
-        public int BattleCreationDate {get; set;}
+        public int? BattleCreationDate {get; set;}
 
         ///<summary>
         ///Запланированная дата боя
         ///</summary>
         [JsonProperty("battle_planned_date")]
-        public int BattlePlannedDate {get; set;}
+        public int? BattlePlannedDate {get; set;}
 
         ///<summary>
         ///Тип боя (атака / оборона)
@@ -4632,12 +4632,6 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("division_cost")]
         public Int64? DivisionCost {get; set;}
-
-        ///<summary>
-        ///Стоимость содержания дивизии в сутки
-        ///</summary>
-        [JsonProperty("division_wage")]
-        public Int64? DivisionWage {get; set;}
 
         ///<summary>
         ///Показывает, присутствует ли Туман войны
@@ -5240,7 +5234,7 @@ namespace WGClient.WorldOfTanks
         ///Время обновления рейтингов
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
     public class WotGlobalmapClaninfoStatistics
@@ -5580,7 +5574,7 @@ namespace WGClient.WorldOfTanks
         ///Дата и время боя
         ///</summary>
         [JsonProperty("time")]
-        public int Time {get; set;}
+        public int? Time {get; set;}
 
         ///<summary>
         ///Тип боя: атака или оборона
@@ -5970,7 +5964,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления данных аккаунта
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Уровень техники
@@ -6095,7 +6089,7 @@ namespace WGClient.WorldOfTanks
         ///Дата подсчёта рейтинга
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Очки победы
@@ -6227,7 +6221,7 @@ namespace WGClient.WorldOfTanks
         ///Дата подсчёта рейтинга
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Очки победы
@@ -6798,7 +6792,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления данных аккаунта
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Ссылка на фронт
@@ -6959,7 +6953,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления данных аккаунта
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Ссылка на фронт
@@ -7029,7 +7023,7 @@ namespace WGClient.WorldOfTanks
         public string AccountId {get; set;}
 
         ///<summary>
-        ///Количество кланов. По умолчанию: 10. Минимальное значение: 1. Максимальное значение: 100.
+        ///Количество кланов. По умолчанию: 20. Минимальное значение: 10. Максимальное значение: 100.
         ///numeric
         ///</summary>
         [JsonProperty("limit")]
@@ -7125,7 +7119,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления данных аккаунта
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Ссылка на фронт
@@ -7269,7 +7263,7 @@ namespace WGClient.WorldOfTanks
         ///Дата подсчёта рейтинга
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -7409,7 +7403,7 @@ namespace WGClient.WorldOfTanks
         ///Дата подсчёта рейтинга
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -7456,13 +7450,13 @@ namespace WGClient.WorldOfTanks
         ///Время расчёта последнего хода в UTC
         ///</summary>
         [JsonProperty("last_turn_calculated_at")]
-        public int LastTurnCalculatedAt {get; set;}
+        public int? LastTurnCalculatedAt {get; set;}
 
         ///<summary>
         ///Время создания последнего рассчитанного хода в UTC
         ///</summary>
         [JsonProperty("last_turn_created_at")]
-        public int LastTurnCreatedAt {get; set;}
+        public int? LastTurnCreatedAt {get; set;}
 
         ///<summary>
         ///Состояние карты: active- активна, frozen- заморожена, turn_calculation_in_progress- происходит расчёт хода
@@ -8072,6 +8066,13 @@ namespace WGClient.WorldOfTanks
         public string ApplicationId {get; set;}
 
         ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
         ///Язык локализации. Допустимые значения: 
 ///
 ///"en" — English 
@@ -8092,13 +8093,6 @@ namespace WGClient.WorldOfTanks
         public string Language {get; set;}
 
         ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
-
-        ///<summary>
         ///Идентификатор техники
         ///numeric, list
         ///</summary>
@@ -8111,6 +8105,19 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("nation")]
         public string Nation {get; set;}
+
+        ///<summary>
+        ///Тип техники. Допустимые значения: 
+///
+///"heavyTank" — Тяжёлый танк 
+///"AT-SPG" — ПТ-САУ 
+///"mediumTank" — Средний танк 
+///"lightTank" — Легкий танк 
+///"SPG" — САУ
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
 
         ///<summary>
         ///Уровень
@@ -8926,6 +8933,13 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("radio_id")]
         public string RadioId {get; set;}
+
+        ///<summary>
+        ///Идентификатор комплектации. Если указан, параметры идентификаторов отдельных модулей не учитываются.
+        ///string
+        ///</summary>
+        [JsonProperty("profile_id")]
+        public string ProfileId {get; set;}
     }
     
     ///<summary>
@@ -8969,6 +8983,12 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("max_weight")]
         public Int64? MaxWeight {get; set;}
+
+        ///<summary>
+        ///Идентификатор комплектации техники
+        ///</summary>
+        [JsonProperty("profile_id")]
+        public string ProfileId {get; set;}
 
         ///<summary>
         ///Макс. скорость заднего хода (км/ч)
@@ -9406,6 +9426,103 @@ namespace WGClient.WorldOfTanks
         public Int64? Weight {get; set;}
     }
 
+
+
+    ///<summary>
+    /// Комплектации техники
+    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/vehicleprofiles/
+    ///</summary>
+    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/vehicleprofiles/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/vehicleprofiles/")]
+    public class RequestWotEncyclopediaVehicleprofiles:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Язык локализации. Допустимые значения: 
+///
+///"en" — English 
+///"ru" — Русский (используется по умолчанию)
+///"pl" — Polski 
+///"de" — Deutsch 
+///"fr" — Français 
+///"es" — Español 
+///"zh-cn" — 简体中文 
+///"tr" — Türkçe 
+///"cs" — Čeština 
+///"th" — ไทย 
+///"vi" — Tiếng Việt 
+///"ko" — 한국어
+        ///string
+        ///</summary>
+        [JsonProperty("language")]
+        public string Language {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор техники
+        ///numeric
+        ///</summary>
+        [JsonProperty("tank_id")]
+        [FieldIsMandatory]
+        public string TankId {get; set;}
+
+        ///<summary>
+        ///Сортировка. Допустимые значения: 
+///
+///"price_credit" — по стоимости в кредитах 
+///"-price_credit" — по стоимости в кредитах, в обратном порядке
+        ///string
+        ///</summary>
+        [JsonProperty("order_by")]
+        public string OrderBy {get; set;}
+    }
+    
+    ///<summary>
+    ///Комплектации техники
+    ///</summary>
+    public class ResponseWotEncyclopediaVehicleprofiles:IResponse
+    {
+
+        ///<summary>
+        ///Базовая комплектация
+        ///</summary>
+        [JsonProperty("is_default")]
+        public bool IsDefault {get; set;}
+
+        ///<summary>
+        ///Стоимость в кредитах
+        ///</summary>
+        [JsonProperty("price_credit")]
+        public Int64? PriceCredit {get; set;}
+
+        ///<summary>
+        ///Идентификатор комплектации техники
+        ///</summary>
+        [JsonProperty("profile_id")]
+        public string ProfileId {get; set;}
+
+        ///<summary>
+        ///Идентификатор техники
+        ///</summary>
+        [JsonProperty("tank_id")]
+        public Int64? TankId {get; set;}
+    }
 
 
     ///<summary>
@@ -10145,6 +10262,13 @@ namespace WGClient.WorldOfTanks
         public string ApplicationId {get; set;}
 
         ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
         ///Язык локализации. Допустимые значения: 
 ///
 ///"en" — English 
@@ -10163,13 +10287,6 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("language")]
         public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
     }
     
     ///<summary>
@@ -10225,6 +10342,12 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("order")]
         public Int64? Order {get; set;}
+
+        ///<summary>
+        ///Показывает, если достижение устарело и больше не может быть получено
+        ///</summary>
+        [JsonProperty("outdated")]
+        public bool Outdated {get; set;}
 
         ///<summary>
         ///Раздел
@@ -10327,6 +10450,13 @@ namespace WGClient.WorldOfTanks
         public string ApplicationId {get; set;}
 
         ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
         ///Язык локализации. Допустимые значения: 
 ///
 ///"en" — English 
@@ -10345,13 +10475,6 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("language")]
         public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
     }
     
     ///<summary>
@@ -10376,7 +10499,7 @@ namespace WGClient.WorldOfTanks
         ///Время обновления информации о технике в энциклопедии
         ///</summary>
         [JsonProperty("tanks_updated_at")]
-        public int TanksUpdatedAt {get; set;}
+        public int? TanksUpdatedAt {get; set;}
 
         ///<summary>
         ///Возможные специальности экипажа
@@ -10439,6 +10562,13 @@ namespace WGClient.WorldOfTanks
         public string ApplicationId {get; set;}
 
         ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
         ///Язык локализации. Допустимые значения: 
 ///
 ///"en" — English 
@@ -10457,13 +10587,6 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("language")]
         public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
     }
     
     ///<summary>
@@ -10499,12 +10622,12 @@ namespace WGClient.WorldOfTanks
 
 
     ///<summary>
-    /// Личные боевые задачи
-    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/personalmissions/
+    /// Снаряжение и оборудование
+    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/provisions/
     ///</summary>
-    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/personalmissions/")]
-    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/personalmissions/")]
-    public class RequestWotEncyclopediaPersonalmissions:IRequest
+    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/provisions/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/provisions/")]
+    public class RequestWotEncyclopediaProvisions:IRequest
     {
 
         ///<summary>
@@ -10515,6 +10638,13 @@ namespace WGClient.WorldOfTanks
         [JsonProperty("application_id")]
         [FieldIsMandatory]
         public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
 
         ///<summary>
         ///Язык локализации. Допустимые значения: 
@@ -10537,11 +10667,129 @@ namespace WGClient.WorldOfTanks
         public string Language {get; set;}
 
         ///<summary>
+        ///Тип. Допустимые значения: 
+///
+///"equipment" — Снаряжение 
+///"optionalDevice" — Оборудование
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Идентификатор оборудования или снаряжения
+        ///numeric, list
+        ///</summary>
+        [JsonProperty("provision_id")]
+        public string ProvisionId {get; set;}
+    }
+    
+    ///<summary>
+    ///Снаряжение и оборудование
+    ///</summary>
+    public class ResponseWotEncyclopediaProvisions:IResponse
+    {
+
+        ///<summary>
+        ///Описание достижения
+        ///</summary>
+        [JsonProperty("description")]
+        public string Description {get; set;}
+
+        ///<summary>
+        ///Ссылка на изображение
+        ///</summary>
+        [JsonProperty("image")]
+        public string Image {get; set;}
+
+        ///<summary>
+        ///Название техники
+        ///</summary>
+        [JsonProperty("name")]
+        public string Name {get; set;}
+
+        ///<summary>
+        ///Стоимость в кредитах
+        ///</summary>
+        [JsonProperty("price_credit")]
+        public Int64? PriceCredit {get; set;}
+
+        ///<summary>
+        ///Стоимость в золоте
+        ///</summary>
+        [JsonProperty("price_gold")]
+        public Int64? PriceGold {get; set;}
+
+        ///<summary>
+        ///Идентификатор оборудования или снаряжения
+        ///</summary>
+        [JsonProperty("provision_id")]
+        public Int64? ProvisionId {get; set;}
+
+        ///<summary>
+        ///Техническое название
+        ///</summary>
+        [JsonProperty("tag")]
+        public string Tag {get; set;}
+
+        ///<summary>
+        ///Тип: снаряжение или оборудование
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Масса в килограммах. Только для оборудования.
+        ///</summary>
+        [JsonProperty("weight")]
+        public Int64? Weight {get; set;}
+    }
+
+
+    ///<summary>
+    /// Личные боевые задачи
+    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/personalmissions/
+    ///</summary>
+    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/personalmissions/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/personalmissions/")]
+    public class RequestWotEncyclopediaPersonalmissions:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
         ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
         ///string, list
         ///</summary>
         [JsonProperty("fields")]
         public string Fields {get; set;}
+
+        ///<summary>
+        ///Язык локализации. Допустимые значения: 
+///
+///"en" — English 
+///"ru" — Русский (используется по умолчанию)
+///"pl" — Polski 
+///"de" — Deutsch 
+///"fr" — Français 
+///"es" — Español 
+///"zh-cn" — 简体中文 
+///"tr" — Türkçe 
+///"cs" — Čeština 
+///"th" — ไทย 
+///"vi" — Tiếng Việt 
+///"ko" — 한국어
+        ///string
+        ///</summary>
+        [JsonProperty("language")]
+        public string Language {get; set;}
 
         ///<summary>
         ///Идентификатор кампании
@@ -10795,131 +11043,6 @@ namespace WGClient.WorldOfTanks
 
 
     ///<summary>
-    /// Снаряжение и оборудование
-    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/provisions/
-    ///</summary>
-    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/provisions/")]
-    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/provisions/")]
-    public class RequestWotEncyclopediaProvisions:IRequest
-    {
-
-        ///<summary>
-        ///Обязательный параметер
-        ///Идентификатор приложения
-        ///string
-        ///</summary>
-        [JsonProperty("application_id")]
-        [FieldIsMandatory]
-        public string ApplicationId {get; set;}
-
-        ///<summary>
-        ///Язык локализации. Допустимые значения: 
-///
-///"en" — English 
-///"ru" — Русский (используется по умолчанию)
-///"pl" — Polski 
-///"de" — Deutsch 
-///"fr" — Français 
-///"es" — Español 
-///"zh-cn" — 简体中文 
-///"tr" — Türkçe 
-///"cs" — Čeština 
-///"th" — ไทย 
-///"vi" — Tiếng Việt 
-///"ko" — 한국어
-        ///string
-        ///</summary>
-        [JsonProperty("language")]
-        public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
-
-        ///<summary>
-        ///Тип. Допустимые значения: 
-///
-///"equipment" — Снаряжение 
-///"optionalDevice" — Оборудование
-        ///string
-        ///</summary>
-        [JsonProperty("type")]
-        public string Type {get; set;}
-
-        ///<summary>
-        ///Идентификатор оборудования или снаряжения
-        ///numeric, list
-        ///</summary>
-        [JsonProperty("provision_id")]
-        public string ProvisionId {get; set;}
-    }
-    
-    ///<summary>
-    ///Снаряжение и оборудование
-    ///</summary>
-    public class ResponseWotEncyclopediaProvisions:IResponse
-    {
-
-        ///<summary>
-        ///Описание достижения
-        ///</summary>
-        [JsonProperty("description")]
-        public string Description {get; set;}
-
-        ///<summary>
-        ///Ссылка на изображение
-        ///</summary>
-        [JsonProperty("image")]
-        public string Image {get; set;}
-
-        ///<summary>
-        ///Название техники
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Стоимость в кредитах
-        ///</summary>
-        [JsonProperty("price_credit")]
-        public Int64? PriceCredit {get; set;}
-
-        ///<summary>
-        ///Стоимость в золоте
-        ///</summary>
-        [JsonProperty("price_gold")]
-        public Int64? PriceGold {get; set;}
-
-        ///<summary>
-        ///Идентификатор оборудования или снаряжения
-        ///</summary>
-        [JsonProperty("provision_id")]
-        public Int64? ProvisionId {get; set;}
-
-        ///<summary>
-        ///Техническое название
-        ///</summary>
-        [JsonProperty("tag")]
-        public string Tag {get; set;}
-
-        ///<summary>
-        ///Тип: снаряжение или оборудование
-        ///</summary>
-        [JsonProperty("type")]
-        public string Type {get; set;}
-
-        ///<summary>
-        ///Масса в килограммах. Только для оборудования.
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-    }
-
-
-    ///<summary>
     /// Личные резервы
     /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/boosters/
     ///</summary>
@@ -10938,6 +11061,13 @@ namespace WGClient.WorldOfTanks
         public string ApplicationId {get; set;}
 
         ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
         ///Язык локализации. Допустимые значения: 
 ///
 ///"en" — English 
@@ -10956,13 +11086,6 @@ namespace WGClient.WorldOfTanks
         ///</summary>
         [JsonProperty("language")]
         public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
     }
     
     ///<summary>
@@ -10987,7 +11110,7 @@ namespace WGClient.WorldOfTanks
         ///Время окончания действия личного резерва в формате UTC
         ///</summary>
         [JsonProperty("expires_at")]
-        public int ExpiresAt {get; set;}
+        public int? ExpiresAt {get; set;}
 
         ///<summary>
         ///Флаг автоматической активации личного резерва
@@ -11034,6 +11157,351 @@ namespace WGClient.WorldOfTanks
         [JsonProperty("small")]
         public string Small {get; set;}
     }
+
+
+
+    ///<summary>
+    /// Модули
+    /// https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/modules/
+    ///</summary>
+    [Method(Url="api.worldoftanks.ru/wot/encyclopedia/modules/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wot/encyclopedia/modules/")]
+    public class RequestWotEncyclopediaModules:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Дополнительные поля, которые будут включены в ответ. Допустимые значения: 
+///
+///default_profile
+        ///string, list
+        ///</summary>
+        [JsonProperty("extra")]
+        public string Extra {get; set;}
+
+        ///<summary>
+        ///Язык локализации. Допустимые значения: 
+///
+///"en" — English 
+///"ru" — Русский (используется по умолчанию)
+///"pl" — Polski 
+///"de" — Deutsch 
+///"fr" — Français 
+///"es" — Español 
+///"zh-cn" — 简体中文 
+///"tr" — Türkçe 
+///"cs" — Čeština 
+///"th" — ไทย 
+///"vi" — Tiếng Việt 
+///"ko" — 한국어
+        ///string
+        ///</summary>
+        [JsonProperty("language")]
+        public string Language {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Тип модуля. Допустимые значения: 
+///
+///"vehicleRadio" — Радиостанции 
+///"vehicleEngine" — Двигатели 
+///"vehicleGun" — Орудия 
+///"vehicleChassis" — Ходовые 
+///"vehicleTurret" — Башни
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        [FieldIsMandatory]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Нация
+        ///string
+        ///</summary>
+        [JsonProperty("nation")]
+        [FieldIsMandatory]
+        public string Nation {get; set;}
+
+        ///<summary>
+        ///Идентификатор модуля. Максимальное ограничение: 100.
+        ///numeric, list
+        ///</summary>
+        [JsonProperty("module_id")]
+        public string ModuleId {get; set;}
+    }
+    
+    ///<summary>
+    ///Модули
+    ///</summary>
+    public class ResponseWotEncyclopediaModules:IResponse
+    {
+
+        ///<summary>
+        ///Ссылка на изображение
+        ///</summary>
+        [JsonProperty("image")]
+        public string Image {get; set;}
+
+        ///<summary>
+        ///Идентификатор модуля
+        ///</summary>
+        [JsonProperty("module_id")]
+        public Int64? ModuleId {get; set;}
+
+        ///<summary>
+        ///Название модуля
+        ///</summary>
+        [JsonProperty("name")]
+        public string Name {get; set;}
+
+        ///<summary>
+        ///Нация
+        ///</summary>
+        [JsonProperty("nation")]
+        public string Nation {get; set;}
+
+        ///<summary>
+        ///Стоимость в кредитах
+        ///</summary>
+        [JsonProperty("price_credit")]
+        public Int64? PriceCredit {get; set;}
+
+        ///<summary>
+        ///Уровень
+        ///</summary>
+        [JsonProperty("tier")]
+        public Int64? Tier {get; set;}
+
+        ///<summary>
+        ///Тип модуля
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Масса (кг)
+        ///</summary>
+        [JsonProperty("weight")]
+        public Int64? Weight {get; set;}
+
+        ///<summary>
+        ///Базовые технические характеристики модуля.
+///Дополнительное поле.
+        ///</summary>
+        [JsonProperty("default_profile")]
+        public WotEncyclopediaModulesDefault_profile DefaultProfile {get; set;}
+    }
+    public class WotEncyclopediaModulesDefault_profile
+    {
+
+        ///<summary>
+        ///Характеристики двигателя
+        ///</summary>
+        [JsonProperty("engine")]
+        public WotEncyclopediaModulesDefault_profileEngine Engine {get; set;}
+
+        ///<summary>
+        ///Характеристики орудия
+        ///</summary>
+        [JsonProperty("gun")]
+        public WotEncyclopediaModulesDefault_profileGun Gun {get; set;}
+
+        ///<summary>
+        ///Характеристики радиостанции
+        ///</summary>
+        [JsonProperty("radio")]
+        public WotEncyclopediaModulesDefault_profileRadio Radio {get; set;}
+
+        ///<summary>
+        ///Характеристики ходовой
+        ///</summary>
+        [JsonProperty("suspension")]
+        public WotEncyclopediaModulesDefault_profileSuspension Suspension {get; set;}
+
+        ///<summary>
+        ///Характеристики башни
+        ///</summary>
+        [JsonProperty("turret")]
+        public WotEncyclopediaModulesDefault_profileTurret Turret {get; set;}
+    }
+    public class WotEncyclopediaModulesDefault_profileEngine
+    {
+
+        ///<summary>
+        ///Вероятность возгорания
+        ///</summary>
+        [JsonProperty("fire_chance")]
+        public double FireChance {get; set;}
+
+        ///<summary>
+        ///Мощность двигателя (л.с.)
+        ///</summary>
+        [JsonProperty("power")]
+        public Int64? Power {get; set;}
+    }
+
+    public class WotEncyclopediaModulesDefault_profileGun
+    {
+
+        ///<summary>
+        ///Время сведения (с)
+        ///</summary>
+        [JsonProperty("aim_time")]
+        public double AimTime {get; set;}
+
+        ///<summary>
+        ///Разброс на 100 м (м)
+        ///</summary>
+        [JsonProperty("dispersion")]
+        public double Dispersion {get; set;}
+
+        ///<summary>
+        ///Скорострельность (выстр/мин)
+        ///</summary>
+        [JsonProperty("fire_rate")]
+        public double FireRate {get; set;}
+
+        ///<summary>
+        ///Количество снарядов
+        ///</summary>
+        [JsonProperty("max_ammo")]
+        public Int64? MaxAmmo {get; set;}
+
+        ///<summary>
+        ///Угол ВН вниз (град)
+        ///</summary>
+        [JsonProperty("move_down_arc")]
+        public Int64? MoveDownArc {get; set;}
+
+        ///<summary>
+        ///Угол ВН вверх (град)
+        ///</summary>
+        [JsonProperty("move_up_arc")]
+        public Int64? MoveUpArc {get; set;}
+
+        ///<summary>
+        ///Время перезарядки (с)
+        ///</summary>
+        [JsonProperty("reload_time")]
+        public double ReloadTime {get; set;}
+
+        ///<summary>
+        ///Скорость поворота (град/с)
+        ///</summary>
+        [JsonProperty("traverse_speed")]
+        public Int64? TraverseSpeed {get; set;}
+
+        ///<summary>
+        ///Харатеристики снарядов орудия
+        ///</summary>
+        [JsonProperty("ammo")]
+        public WotEncyclopediaModulesDefault_profileGunAmmo Ammo {get; set;}
+    }
+    public class WotEncyclopediaModulesDefault_profileGunAmmo
+    {
+
+        ///<summary>
+        ///Урон (hp), в виде списка значений: min, avg, max
+        ///</summary>
+        [JsonProperty("damage")]
+        public int[] Damage {get; set;}
+
+        ///<summary>
+        ///Пробитие (мм), в виде списка значений: min, avg, max
+        ///</summary>
+        [JsonProperty("penetration")]
+        public int[] Penetration {get; set;}
+
+        ///<summary>
+        ///Тип снаряда
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+    }
+
+
+    public class WotEncyclopediaModulesDefault_profileRadio
+    {
+
+        ///<summary>
+        ///Дальность связи
+        ///</summary>
+        [JsonProperty("signal_range")]
+        public Int64? SignalRange {get; set;}
+    }
+
+    public class WotEncyclopediaModulesDefault_profileSuspension
+    {
+
+        ///<summary>
+        ///Максимальная нагрузка (кг)
+        ///</summary>
+        [JsonProperty("load_limit")]
+        public Int64? LoadLimit {get; set;}
+
+        ///<summary>
+        ///Скорость поворота (град/с)
+        ///</summary>
+        [JsonProperty("traverse_speed")]
+        public Int64? TraverseSpeed {get; set;}
+    }
+
+    public class WotEncyclopediaModulesDefault_profileTurret
+    {
+
+        ///<summary>
+        ///Броня: лоб (мм)
+        ///</summary>
+        [JsonProperty("armor_front")]
+        public Int64? ArmorFront {get; set;}
+
+        ///<summary>
+        ///Броня: корма (мм)
+        ///</summary>
+        [JsonProperty("armor_rear")]
+        public Int64? ArmorRear {get; set;}
+
+        ///<summary>
+        ///Броня: борт (мм)
+        ///</summary>
+        [JsonProperty("armor_sides")]
+        public Int64? ArmorSides {get; set;}
+
+        ///<summary>
+        ///Прочность
+        ///</summary>
+        [JsonProperty("hp")]
+        public Int64? Hp {get; set;}
+
+        ///<summary>
+        ///Скорость поворота (град/с)
+        ///</summary>
+        [JsonProperty("traverse_speed")]
+        public Int64? TraverseSpeed {get; set;}
+
+        ///<summary>
+        ///Обзор (м)
+        ///</summary>
+        [JsonProperty("view_range")]
+        public Int64? ViewRange {get; set;}
+    }
+
 
 
 
@@ -11824,7 +12292,7 @@ namespace WGClient.WorldOfTanks
         public string RankField {get; set;}
 
         ///<summary>
-        ///Максимальное количество соседних позиций
+        ///Количество возвращаемых записей. По умолчанию: 5. Максимальное значение: 50.
         ///numeric
         ///</summary>
         [JsonProperty("limit")]
@@ -12354,7 +12822,7 @@ namespace WGClient.WorldOfTanks
         public string RankField {get; set;}
 
         ///<summary>
-        ///Максимальное количество игроков в списке
+        ///Количество возвращаемых записей. По умолчанию: 10. Максимальное значение: 1000.
         ///numeric
         ///</summary>
         [JsonProperty("limit")]
@@ -16546,7 +17014,7 @@ namespace WGClient.WorldOfTanks
         ///Дата создания команды
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Описание команды
@@ -16588,7 +17056,7 @@ namespace WGClient.WorldOfTanks
         ///Дата обновления информации о команде
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Количество побед команды
@@ -16689,7 +17157,7 @@ namespace WGClient.WorldOfTanks
         ///Дата вступления в команду
         ///</summary>
         [JsonProperty("joined_at")]
-        public int JoinedAt {get; set;}
+        public int? JoinedAt {get; set;}
 
         ///<summary>
         ///Техническое название роли в команде
@@ -16965,13 +17433,13 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -16983,7 +17451,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата обновления информации об игроке
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Приватные данные игрока
@@ -17010,7 +17478,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Время окончания блокировки аккаунта
         ///</summary>
         [JsonProperty("ban_time")]
-        public int BanTime {get; set;}
+        public int? BanTime {get; set;}
 
         ///<summary>
         ///Общее время в бою до уничтожения в секундах
@@ -17046,7 +17514,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Срок действия премиум аккаунта
         ///</summary>
         [JsonProperty("premium_expires_at")]
-        public int PremiumExpiresAt {get; set;}
+        public int? PremiumExpiresAt {get; set;}
 
         ///<summary>
         ///Группы контактов.
@@ -17090,7 +17558,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Время окончания блокировки в чате
         ///</summary>
         [JsonProperty("chat_ban_time")]
-        public int ChatBanTime {get; set;}
+        public int? ChatBanTime {get; set;}
     }
 
 
@@ -17303,6 +17771,226 @@ namespace WGClient.WorldOfTanksBlitz
         [JsonProperty("max_series")]
         public Dictionary<string,string> MaxSeries {get; set;}
     }
+
+
+    ///<summary>
+    /// Статистика по технике
+    /// https://ru.wargaming.net/developers/api_reference/wotb/account/tankstats/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/account/tankstats/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/account/tankstats/")]
+    public class RequestWotbAccountTankstats:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Язык локализации. Допустимые значения: 
+///
+///"en" — English 
+///"ru" — Русский (используется по умолчанию)
+///"pl" — Polski 
+///"de" — Deutsch 
+///"fr" — Français 
+///"es" — Español 
+///"zh-cn" — 简体中文 
+///"tr" — Türkçe 
+///"cs" — Čeština 
+///"th" — ไทย 
+///"vi" — Tiếng Việt 
+///"ko" — 한국어
+        ///string
+        ///</summary>
+        [JsonProperty("language")]
+        public string Language {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор аккаунта игрока
+        ///numeric, list
+        ///</summary>
+        [JsonProperty("account_id")]
+        [FieldIsMandatory]
+        public string AccountId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор техники игрока
+        ///numeric
+        ///</summary>
+        [JsonProperty("tank_id")]
+        [FieldIsMandatory]
+        public string TankId {get; set;}
+    }
+    
+    ///<summary>
+    ///Статистика по технике
+    ///</summary>
+    public class ResponseWotbAccountTankstats:IResponse
+    {
+
+        ///<summary>
+        ///Идентификатор аккаунта игрока
+        ///</summary>
+        [JsonProperty("account_id")]
+        public Int64? AccountId {get; set;}
+
+        ///<summary>
+        ///Общее время в боях в секундах
+        ///</summary>
+        [JsonProperty("battle_life_time")]
+        public int? BattleLifeTime {get; set;}
+
+        ///<summary>
+        ///Время последнего боя
+        ///</summary>
+        [JsonProperty("last_battle_time")]
+        public int? LastBattleTime {get; set;}
+
+        ///<summary>
+        ///Знаки классности:
+///
+///0 — Отсутствует
+///1 — 3 степень
+///2 — 2 степень
+///3 — 1 степень
+///4 — Мастер
+        ///</summary>
+        [JsonProperty("mark_of_mastery")]
+        public Int64? MarkOfMastery {get; set;}
+
+        ///<summary>
+        ///Идентификатор техники
+        ///</summary>
+        [JsonProperty("tank_id")]
+        public Int64? TankId {get; set;}
+
+        ///<summary>
+        ///Вся статистика
+        ///</summary>
+        [JsonProperty("all")]
+        public WotbAccountTankstatsAll All {get; set;}
+    }
+    public class WotbAccountTankstatsAll
+    {
+
+        ///<summary>
+        ///Количество боёв
+        ///</summary>
+        [JsonProperty("battles")]
+        public Int64? Battles {get; set;}
+
+        ///<summary>
+        ///Очки захвата базы
+        ///</summary>
+        [JsonProperty("capture_points")]
+        public Int64? CapturePoints {get; set;}
+
+        ///<summary>
+        ///Нанесённый урон
+        ///</summary>
+        [JsonProperty("damage_dealt")]
+        public Int64? DamageDealt {get; set;}
+
+        ///<summary>
+        ///Полученный урон
+        ///</summary>
+        [JsonProperty("damage_received")]
+        public Int64? DamageReceived {get; set;}
+
+        ///<summary>
+        ///Очки защиты базы
+        ///</summary>
+        [JsonProperty("dropped_capture_points")]
+        public Int64? DroppedCapturePoints {get; set;}
+
+        ///<summary>
+        ///Количество уничтоженной техники
+        ///</summary>
+        [JsonProperty("frags")]
+        public Int64? Frags {get; set;}
+
+        ///<summary>
+        ///Количество уничтоженной техники (уровень >=8)
+        ///</summary>
+        [JsonProperty("frags8p")]
+        public Int64? Frags8p {get; set;}
+
+        ///<summary>
+        ///Количество попаданий
+        ///</summary>
+        [JsonProperty("hits")]
+        public Int64? Hits {get; set;}
+
+        ///<summary>
+        ///Количество поражений
+        ///</summary>
+        [JsonProperty("losses")]
+        public Int64? Losses {get; set;}
+
+        ///<summary>
+        ///Максимум уничтожено за бой
+        ///</summary>
+        [JsonProperty("max_frags")]
+        public Int64? MaxFrags {get; set;}
+
+        ///<summary>
+        ///Максимальный опыт за бой
+        ///</summary>
+        [JsonProperty("max_xp")]
+        public Int64? MaxXp {get; set;}
+
+        ///<summary>
+        ///Произведено выстрелов
+        ///</summary>
+        [JsonProperty("shots")]
+        public Int64? Shots {get; set;}
+
+        ///<summary>
+        ///Количество обнаруженной техники
+        ///</summary>
+        [JsonProperty("spotted")]
+        public Int64? Spotted {get; set;}
+
+        ///<summary>
+        ///Выжил в боях
+        ///</summary>
+        [JsonProperty("survived_battles")]
+        public Int64? SurvivedBattles {get; set;}
+
+        ///<summary>
+        ///Выжил в боях и победил
+        ///</summary>
+        [JsonProperty("win_and_survived")]
+        public Int64? WinAndSurvived {get; set;}
+
+        ///<summary>
+        ///Количество побед
+        ///</summary>
+        [JsonProperty("wins")]
+        public Int64? Wins {get; set;}
+
+        ///<summary>
+        ///Суммарный опыт
+        ///</summary>
+        [JsonProperty("xp")]
+        public Int64? Xp {get; set;}
+    }
+
 
 
     ///<summary>
@@ -17928,491 +18616,6 @@ namespace WGClient.WorldOfTanksBlitz
 
 
     ///<summary>
-    /// Внимание! Метод будет отключён.
-    /// Список характеристик техники
-    /// https://ru.wargaming.net/developers/api_reference/wotb/encyclopedia/vehicleprofiles/
-    ///</summary>
-    [Method(Url="api.wotblitz.ru/wotb/encyclopedia/vehicleprofiles/")]
-    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/encyclopedia/vehicleprofiles/")]
-    [Obsolete]
-    public class RequestWotbEncyclopediaVehicleprofiles:IRequest
-    {
-
-        ///<summary>
-        ///Обязательный параметер
-        ///Идентификатор приложения
-        ///string
-        ///</summary>
-        [JsonProperty("application_id")]
-        [FieldIsMandatory]
-        public string ApplicationId {get; set;}
-
-        ///<summary>
-        ///Язык локализации. Допустимые значения: 
-///
-///"en" — English 
-///"ru" — Русский (используется по умолчанию)
-///"pl" — Polski 
-///"de" — Deutsch 
-///"fr" — Français 
-///"es" — Español 
-///"zh-cn" — 简体中文 
-///"tr" — Türkçe 
-///"cs" — Čeština 
-///"th" — ไทย 
-///"vi" — Tiếng Việt 
-///"ko" — 한국어
-        ///string
-        ///</summary>
-        [JsonProperty("language")]
-        public string Language {get; set;}
-
-        ///<summary>
-        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
-        ///string, list
-        ///</summary>
-        [JsonProperty("fields")]
-        public string Fields {get; set;}
-
-        ///<summary>
-        ///Обязательный параметер
-        ///Идентификатор техники
-        ///numeric
-        ///</summary>
-        [JsonProperty("tank_id")]
-        [FieldIsMandatory]
-        public string TankId {get; set;}
-
-        ///<summary>
-        ///Характеристики только базовой комплектации. Допустимые значения: 
-///
-///"1" — Характеристики только базовой комплектации 
-///"0" — Характеристики всех комплектаций (используется по умолчанию)
-        ///string
-        ///</summary>
-        [JsonProperty("is_default")]
-        public string IsDefault {get; set;}
-    }
-    
-    ///<summary>
-    ///Список характеристик техники
-    ///</summary>
-    public class ResponseWotbEncyclopediaVehicleprofiles:IResponse
-    {
-
-        ///<summary>
-        ///Идентификатор двигателя
-        ///</summary>
-        [JsonProperty("engine_id")]
-        public Int64? EngineId {get; set;}
-
-        ///<summary>
-        ///Огневая мощь (%)
-        ///</summary>
-        [JsonProperty("firepower")]
-        public Int64? Firepower {get; set;}
-
-        ///<summary>
-        ///Идентификатор орудия
-        ///</summary>
-        [JsonProperty("gun_id")]
-        public Int64? GunId {get; set;}
-
-        ///<summary>
-        ///Прочность
-        ///</summary>
-        [JsonProperty("hp")]
-        public Int64? Hp {get; set;}
-
-        ///<summary>
-        ///Прочность корпуса
-        ///</summary>
-        [JsonProperty("hull_hp")]
-        public Int64? HullHp {get; set;}
-
-        ///<summary>
-        ///Масса корпуса (кг)
-        ///</summary>
-        [JsonProperty("hull_weight")]
-        public Int64? HullWeight {get; set;}
-
-        ///<summary>
-        ///Базовая комплектация
-        ///</summary>
-        [JsonProperty("is_default")]
-        public bool IsDefault {get; set;}
-
-        ///<summary>
-        ///Манёвренность (%)
-        ///</summary>
-        [JsonProperty("maneuverability")]
-        public Int64? Maneuverability {get; set;}
-
-        ///<summary>
-        ///Боекомплект
-        ///</summary>
-        [JsonProperty("max_ammo")]
-        public Int64? MaxAmmo {get; set;}
-
-        ///<summary>
-        ///Предельная масса (кг)
-        ///</summary>
-        [JsonProperty("max_weight")]
-        public Int64? MaxWeight {get; set;}
-
-        ///<summary>
-        ///Защищённость (%)
-        ///</summary>
-        [JsonProperty("protection")]
-        public Int64? Protection {get; set;}
-
-        ///<summary>
-        ///Эффективность выстрела (%)
-        ///</summary>
-        [JsonProperty("shot_efficiency")]
-        public Int64? ShotEfficiency {get; set;}
-
-        ///<summary>
-        ///Дальность связи
-        ///</summary>
-        [JsonProperty("signal_range")]
-        public Int64? SignalRange {get; set;}
-
-        ///<summary>
-        ///Макс. скорость заднего хода (км/ч)
-        ///</summary>
-        [JsonProperty("speed_backward")]
-        public Int64? SpeedBackward {get; set;}
-
-        ///<summary>
-        ///Максимальная скорость (км/ч)
-        ///</summary>
-        [JsonProperty("speed_forward")]
-        public Int64? SpeedForward {get; set;}
-
-        ///<summary>
-        ///Идентификатор ходовой
-        ///</summary>
-        [JsonProperty("suspension_id")]
-        public Int64? SuspensionId {get; set;}
-
-        ///<summary>
-        ///Идентификатор башни
-        ///</summary>
-        [JsonProperty("turret_id")]
-        public Int64? TurretId {get; set;}
-
-        ///<summary>
-        ///Масса (кг)
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-
-        ///<summary>
-        ///Бронирование
-        ///</summary>
-        [JsonProperty("armor")]
-        public WotbEncyclopediaVehicleprofilesArmor Armor {get; set;}
-
-        ///<summary>
-        ///Характеристики двигателя
-        ///</summary>
-        [JsonProperty("engine")]
-        public WotbEncyclopediaVehicleprofilesEngine Engine {get; set;}
-
-        ///<summary>
-        ///Характеристики орудия
-        ///</summary>
-        [JsonProperty("gun")]
-        public WotbEncyclopediaVehicleprofilesGun Gun {get; set;}
-
-        ///<summary>
-        ///Характеристики снарядов орудия
-        ///</summary>
-        [JsonProperty("shells")]
-        public WotbEncyclopediaVehicleprofilesShells Shells {get; set;}
-
-        ///<summary>
-        ///Характеристики ходовой
-        ///</summary>
-        [JsonProperty("suspension")]
-        public WotbEncyclopediaVehicleprofilesSuspension Suspension {get; set;}
-
-        ///<summary>
-        ///Характеристики башни
-        ///</summary>
-        [JsonProperty("turret")]
-        public WotbEncyclopediaVehicleprofilesTurret Turret {get; set;}
-    }
-    public class WotbEncyclopediaVehicleprofilesArmor
-    {
-
-        ///<summary>
-        ///Бронирование корпуса
-        ///</summary>
-        [JsonProperty("hull")]
-        public WotbEncyclopediaVehicleprofilesArmorHull Hull {get; set;}
-
-        ///<summary>
-        ///Бронирование башни
-        ///</summary>
-        [JsonProperty("turret")]
-        public WotbEncyclopediaVehicleprofilesArmorTurret Turret {get; set;}
-    }
-    public class WotbEncyclopediaVehicleprofilesArmorHull
-    {
-
-        ///<summary>
-        ///Лоб (мм)
-        ///</summary>
-        [JsonProperty("front")]
-        public Int64? Front {get; set;}
-
-        ///<summary>
-        ///Корма (мм)
-        ///</summary>
-        [JsonProperty("rear")]
-        public Int64? Rear {get; set;}
-
-        ///<summary>
-        ///Борт (мм)
-        ///</summary>
-        [JsonProperty("sides")]
-        public Int64? Sides {get; set;}
-    }
-
-    public class WotbEncyclopediaVehicleprofilesArmorTurret
-    {
-
-        ///<summary>
-        ///Лоб (мм)
-        ///</summary>
-        [JsonProperty("front")]
-        public Int64? Front {get; set;}
-
-        ///<summary>
-        ///Корма (мм)
-        ///</summary>
-        [JsonProperty("rear")]
-        public Int64? Rear {get; set;}
-
-        ///<summary>
-        ///Борт (мм)
-        ///</summary>
-        [JsonProperty("sides")]
-        public Int64? Sides {get; set;}
-    }
-
-
-    public class WotbEncyclopediaVehicleprofilesEngine
-    {
-
-        ///<summary>
-        ///Вероятность возгорания
-        ///</summary>
-        [JsonProperty("fire_chance")]
-        public double FireChance {get; set;}
-
-        ///<summary>
-        ///Название техники
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Мощность (л.с.)
-        ///</summary>
-        [JsonProperty("power")]
-        public Int64? Power {get; set;}
-
-        ///<summary>
-        ///Уровень
-        ///</summary>
-        [JsonProperty("tier")]
-        public Int64? Tier {get; set;}
-
-        ///<summary>
-        ///Масса (кг)
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-    }
-
-    public class WotbEncyclopediaVehicleprofilesGun
-    {
-
-        ///<summary>
-        ///Время сведения (с)
-        ///</summary>
-        [JsonProperty("aim_time")]
-        public double AimTime {get; set;}
-
-        ///<summary>
-        ///Калибр (мм)
-        ///</summary>
-        [JsonProperty("caliber")]
-        public Int64? Caliber {get; set;}
-
-        ///<summary>
-        ///Разброс на 100 м (м)
-        ///</summary>
-        [JsonProperty("dispersion")]
-        public double Dispersion {get; set;}
-
-        ///<summary>
-        ///Скорострельность (выстр/мин)
-        ///</summary>
-        [JsonProperty("fire_rate")]
-        public double FireRate {get; set;}
-
-        ///<summary>
-        ///Угол ВН вниз (град)
-        ///</summary>
-        [JsonProperty("move_down_arc")]
-        public Int64? MoveDownArc {get; set;}
-
-        ///<summary>
-        ///Угол ВН вверх (град)
-        ///</summary>
-        [JsonProperty("move_up_arc")]
-        public Int64? MoveUpArc {get; set;}
-
-        ///<summary>
-        ///Название техники
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Время перезарядки (с)
-        ///</summary>
-        [JsonProperty("reload_time")]
-        public double ReloadTime {get; set;}
-
-        ///<summary>
-        ///Уровень
-        ///</summary>
-        [JsonProperty("tier")]
-        public Int64? Tier {get; set;}
-
-        ///<summary>
-        ///Масса (кг)
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-    }
-
-    public class WotbEncyclopediaVehicleprofilesShells
-    {
-
-        ///<summary>
-        ///Средний урон (ед.)
-        ///</summary>
-        [JsonProperty("damage")]
-        public Int64? Damage {get; set;}
-
-        ///<summary>
-        ///Средняя бронепробиваемость (мм)
-        ///</summary>
-        [JsonProperty("penetration")]
-        public Int64? Penetration {get; set;}
-
-        ///<summary>
-        ///Тип
-        ///</summary>
-        [JsonProperty("type")]
-        public string Type {get; set;}
-    }
-
-    public class WotbEncyclopediaVehicleprofilesSuspension
-    {
-
-        ///<summary>
-        ///Максимальная нагрузка (кг)
-        ///</summary>
-        [JsonProperty("load_limit")]
-        public Int64? LoadLimit {get; set;}
-
-        ///<summary>
-        ///Название техники
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Уровень
-        ///</summary>
-        [JsonProperty("tier")]
-        public Int64? Tier {get; set;}
-
-        ///<summary>
-        ///Скорость поворота (град/с)
-        ///</summary>
-        [JsonProperty("traverse_speed")]
-        public Int64? TraverseSpeed {get; set;}
-
-        ///<summary>
-        ///Масса (кг)
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-    }
-
-    public class WotbEncyclopediaVehicleprofilesTurret
-    {
-
-        ///<summary>
-        ///Прочность
-        ///</summary>
-        [JsonProperty("hp")]
-        public Int64? Hp {get; set;}
-
-        ///<summary>
-        ///Название техники
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Уровень
-        ///</summary>
-        [JsonProperty("tier")]
-        public Int64? Tier {get; set;}
-
-        ///<summary>
-        ///Угол вращения влево (град)
-        ///</summary>
-        [JsonProperty("traverse_left_arc")]
-        public Int64? TraverseLeftArc {get; set;}
-
-        ///<summary>
-        ///Угол вращения вправо (град)
-        ///</summary>
-        [JsonProperty("traverse_right_arc")]
-        public Int64? TraverseRightArc {get; set;}
-
-        ///<summary>
-        ///Скорость поворота (град/с)
-        ///</summary>
-        [JsonProperty("traverse_speed")]
-        public Int64? TraverseSpeed {get; set;}
-
-        ///<summary>
-        ///Обзор (м)
-        ///</summary>
-        [JsonProperty("view_range")]
-        public Int64? ViewRange {get; set;}
-
-        ///<summary>
-        ///Масса (кг)
-        ///</summary>
-        [JsonProperty("weight")]
-        public Int64? Weight {get; set;}
-    }
-
-
-
-    ///<summary>
     /// Характеристики техники
     /// https://ru.wargaming.net/developers/api_reference/wotb/encyclopedia/vehicleprofile/
     ///</summary>
@@ -19030,7 +19233,7 @@ namespace WGClient.WorldOfTanksBlitz
         public string Nation {get; set;}
 
         ///<summary>
-        ///Мощность (л.с.)
+        ///Мощность двигателя (л.с.)
         ///</summary>
         [JsonProperty("power")]
         public Int64? Power {get; set;}
@@ -19468,7 +19671,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Время обновления информации о технике в Танкопедии
         ///</summary>
         [JsonProperty("tanks_updated_at")]
-        public int TanksUpdatedAt {get; set;}
+        public int? TanksUpdatedAt {get; set;}
 
         ///<summary>
         ///Доступные нации
@@ -19583,10 +19786,22 @@ namespace WGClient.WorldOfTanksBlitz
         public string Image {get; set;}
 
         ///<summary>
+        ///Ссылка на изображение большого размера
+        ///</summary>
+        [JsonProperty("image_big")]
+        public string ImageBig {get; set;}
+
+        ///<summary>
         ///Название достижения
         ///</summary>
         [JsonProperty("name")]
         public string Name {get; set;}
+
+        ///<summary>
+        ///Порядок достижений
+        ///</summary>
+        [JsonProperty("order")]
+        public Int64? Order {get; set;}
 
         ///<summary>
         ///Раздел
@@ -19614,6 +19829,12 @@ namespace WGClient.WorldOfTanksBlitz
         ///</summary>
         [JsonProperty("image")]
         public string Image {get; set;}
+
+        ///<summary>
+        ///Ссылка на изображение большого размера
+        ///</summary>
+        [JsonProperty("image_big")]
+        public string ImageBig {get; set;}
 
         ///<summary>
         ///Название достижения
@@ -19807,7 +20028,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Количество игроков клана
@@ -19889,7 +20110,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Идентификатор игрока, создавшего клан
@@ -19983,7 +20204,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Время последнего переименования клана в UTC
         ///</summary>
         [JsonProperty("renamed_at")]
-        public int RenamedAt {get; set;}
+        public int? RenamedAt {get; set;}
 
         ///<summary>
         ///Тег клана
@@ -19995,7 +20216,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Время обновления информации о клане
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Игроки клана.
@@ -20029,7 +20250,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата вступления в клан
         ///</summary>
         [JsonProperty("joined_at")]
-        public int JoinedAt {get; set;}
+        public int? JoinedAt {get; set;}
 
         ///<summary>
         ///Техническое название должности
@@ -20146,7 +20367,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата вступления в клан
         ///</summary>
         [JsonProperty("joined_at")]
-        public int JoinedAt {get; set;}
+        public int? JoinedAt {get; set;}
 
         ///<summary>
         ///Техническое название должности
@@ -20174,7 +20395,7 @@ namespace WGClient.WorldOfTanksBlitz
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Идентификатор набора эмблем
@@ -20280,6 +20501,574 @@ namespace WGClient.WorldOfTanksBlitz
 
 
     ///<summary>
+    /// Доска объявлений
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/messages/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/messages/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/messages/")]
+    public class RequestWotbClanmessagesMessages:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Идентификатор сообщения
+        ///numeric
+        ///</summary>
+        [JsonProperty("message_id")]
+        public string MessageId {get; set;}
+
+        ///<summary>
+        ///Число возвращаемых записей. Если отправленное значение превышает 100, применяется ограничение в 25 (по умолчанию).
+        ///numeric
+        ///</summary>
+        [JsonProperty("limit")]
+        public string Limit {get; set;}
+
+        ///<summary>
+        ///Номер страницы.
+        ///numeric
+        ///</summary>
+        [JsonProperty("page_no")]
+        public string PageNo {get; set;}
+
+        ///<summary>
+        ///Сортировка. Допустимые значения:
+///
+///
+///importance — по важности сообщения
+///
+///
+///-importance — по важности сообщения, в обратном порядке
+///
+///
+///created_at — по дате создания сообщения
+///
+///
+///-created_at — по дате создания сообщения, в обратном порядке
+///
+///
+///updated_at — по дате обновления сообщения
+///
+///
+///-updated_at — по дате обновления сообщения, в обратном порядке
+///
+///
+///type — по типу сообщения
+///
+///
+///-type — по типу сообщения, в обратном порядке
+        ///string, list
+        ///</summary>
+        [JsonProperty("order_by")]
+        public string OrderBy {get; set;}
+
+        ///<summary>
+        ///Поиск сообщений с конечной датой актуальности равной заданному значению или позднее его. Дата в формате UNIX timestamp или ISO 8601. Например, 1376542800 или 2013-08-15T00:00:00.
+        ///timestamp/date
+        ///</summary>
+        [JsonProperty("expires_after")]
+        public string ExpiresAfter {get; set;}
+
+        ///<summary>
+        ///Поиск сообщений с конечной датой актуальности ранее заданного значения. Дата в формате UNIX timestamp или ISO 8601. Например, 1376542800 или 2013-08-15T00:00:00.
+        ///timestamp/date
+        ///</summary>
+        [JsonProperty("expires_before")]
+        public string ExpiresBefore {get; set;}
+
+        ///<summary>
+        ///Статус сообщения. Допустимые значения: 
+///
+///"active" — Активные сообщения 
+///"deleted" — Удалённое сообщение
+        ///string
+        ///</summary>
+        [JsonProperty("status")]
+        public string Status {get; set;}
+
+        ///<summary>
+        ///Тип сообщения. Допустимые значения: 
+///
+///"general" — Общие сообщения 
+///"training" — Сообщения о тренировке 
+///"meeting" — Сообщения о встрече 
+///"battle" — Сообщения в бою
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Важность сообщения. Допустимые значения: 
+///
+///"important" — Важные сообщения 
+///"standard" — Стандартные сообщения
+        ///string
+        ///</summary>
+        [JsonProperty("importance")]
+        public string Importance {get; set;}
+    }
+    
+    ///<summary>
+    ///Доска объявлений
+    ///</summary>
+    public class ResponseWotbClanmessagesMessages:IResponse
+    {
+
+        ///<summary>
+        ///Идентификатор автора сообщения
+        ///</summary>
+        [JsonProperty("author_id")]
+        public Int64? AuthorId {get; set;}
+
+        ///<summary>
+        ///Идентификатор клана
+        ///</summary>
+        [JsonProperty("clan_id")]
+        public Int64? ClanId {get; set;}
+
+        ///<summary>
+        ///Дата создания сообщения
+        ///</summary>
+        [JsonProperty("created_at")]
+        public int? CreatedAt {get; set;}
+
+        ///<summary>
+        ///Идентификатор игрока, изменившего сообщение
+        ///</summary>
+        [JsonProperty("editor_id")]
+        public Int64? EditorId {get; set;}
+
+        ///<summary>
+        ///Дата, когда сообщение станет неактуальным
+        ///</summary>
+        [JsonProperty("expires_at")]
+        public int? ExpiresAt {get; set;}
+
+        ///<summary>
+        ///Важность сообщения
+        ///</summary>
+        [JsonProperty("importance")]
+        public string Importance {get; set;}
+
+        ///<summary>
+        ///Количество отметок "Нравится"
+        ///</summary>
+        [JsonProperty("likes")]
+        public Int64? Likes {get; set;}
+
+        ///<summary>
+        ///Текст сообщения
+        ///</summary>
+        [JsonProperty("message")]
+        public string Message {get; set;}
+
+        ///<summary>
+        ///Идентификатор сообщения
+        ///</summary>
+        [JsonProperty("message_id")]
+        public Int64? MessageId {get; set;}
+
+        ///<summary>
+        ///Заголовок сообщения
+        ///</summary>
+        [JsonProperty("title")]
+        public string Title {get; set;}
+
+        ///<summary>
+        ///Тип сообщения
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+
+        ///<summary>
+        ///Дата обновления сообщения
+        ///</summary>
+        [JsonProperty("updated_at")]
+        public int? UpdatedAt {get; set;}
+    }
+
+
+    ///<summary>
+    /// Создать сообщение на доске объявлений
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/create/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/create/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/create/")]
+    public class RequestWotbClanmessagesCreate:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Заголовок сообщения. Максимальная длина: 100 символов.
+        ///string
+        ///</summary>
+        [JsonProperty("title")]
+        [FieldIsMandatory]
+        public string Title {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Текст сообщения. Максимальная длина: 1000 символов.
+        ///string
+        ///</summary>
+        [JsonProperty("text")]
+        [FieldIsMandatory]
+        public string Text {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Важность сообщения. Допустимые значения: 
+///
+///"important" — Важные сообщения 
+///"standard" — Стандартные сообщения
+        ///string
+        ///</summary>
+        [JsonProperty("importance")]
+        [FieldIsMandatory]
+        public string Importance {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Дата, когда сообщение станет неактуальным. Дата в формате UNIX timestamp или ISO 8601. Например, 1376542800 или 2013-08-15T00:00:00. Должна должна быть в будущем времени.
+        ///timestamp/date
+        ///</summary>
+        [JsonProperty("expires_at")]
+        [FieldIsMandatory]
+        public string ExpiresAt {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Тип сообщения. Допустимые значения: 
+///
+///"general" — Общие сообщения 
+///"training" — Сообщения о тренировке 
+///"meeting" — Сообщения о встрече 
+///"battle" — Сообщения в бою
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        [FieldIsMandatory]
+        public string Type {get; set;}
+    }
+    
+    ///<summary>
+    ///Создать сообщение на доске объявлений
+    ///</summary>
+    public class ResponseWotbClanmessagesCreate:IResponse
+    {
+
+        ///<summary>
+        ///Идентификатор сообщения
+        ///</summary>
+        [JsonProperty("message_id")]
+        public Int64? MessageId {get; set;}
+    }
+
+
+    ///<summary>
+    /// Удалить сообщение на доске объявлений
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/delete/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/delete/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/delete/")]
+    public class RequestWotbClanmessagesDelete:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор сообщения
+        ///numeric
+        ///</summary>
+        [JsonProperty("message_id")]
+        [FieldIsMandatory]
+        public string MessageId {get; set;}
+    }
+    
+    ///<summary>
+    ///Удалить сообщение на доске объявлений
+    ///</summary>
+    public class ResponseWotbClanmessagesDelete:IResponse
+    {
+    }
+
+
+    ///<summary>
+    /// Поставить/снять отметку "Нравится"
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/like/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/like/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/like/")]
+    public class RequestWotbClanmessagesLike:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор сообщения
+        ///numeric
+        ///</summary>
+        [JsonProperty("message_id")]
+        [FieldIsMandatory]
+        public string MessageId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Действие. Допустимые значения: 
+///
+///"add" — Отметить сообщение как понравившееся 
+///"remove" — Снять отметку "Нравится" с сообщения
+        ///string
+        ///</summary>
+        [JsonProperty("action")]
+        [FieldIsMandatory]
+        public string Action {get; set;}
+    }
+    
+    ///<summary>
+    ///Поставить/снять отметку "Нравится"
+    ///</summary>
+    public class ResponseWotbClanmessagesLike:IResponse
+    {
+    }
+
+
+    ///<summary>
+    /// Отметки "Нравится"
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/likes/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/likes/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/likes/")]
+    public class RequestWotbClanmessagesLikes:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор сообщения. Количество возвращаемых записей не должно превышать 10.
+        ///numeric, list
+        ///</summary>
+        [JsonProperty("message_id")]
+        [FieldIsMandatory]
+        public string MessageId {get; set;}
+    }
+    
+    ///<summary>
+    ///Отметки "Нравится"
+    ///</summary>
+    public class ResponseWotbClanmessagesLikes:IResponse
+    {
+
+        ///<summary>
+        ///Идентификатор аккаунта, поставившего отметку "Нравится"
+        ///</summary>
+        [JsonProperty("account_id")]
+        public Int64? AccountId {get; set;}
+
+        ///<summary>
+        ///Дата, когда сообщение было отмечено как понравившееся
+        ///</summary>
+        [JsonProperty("liked_at")]
+        public int? LikedAt {get; set;}
+    }
+
+
+    ///<summary>
+    /// Обновить сообщение на доске объявлений
+    /// https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/update/
+    ///</summary>
+    [Method(Url="api.wotblitz.ru/wotb/clanmessages/update/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wotb/clanmessages/update/")]
+    public class RequestWotbClanmessagesUpdate:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Ключ доступа к персональным данным пользователя. Имеет срок действия. Для получения ключа доступа необходимо запросить аутентификацию.
+        ///string
+        ///</summary>
+        [JsonProperty("access_token")]
+        [FieldIsMandatory]
+        public string AccessToken {get; set;}
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор сообщения
+        ///numeric
+        ///</summary>
+        [JsonProperty("message_id")]
+        [FieldIsMandatory]
+        public string MessageId {get; set;}
+
+        ///<summary>
+        ///Заголовок сообщения. Максимальная длина: 100 символов.
+        ///string
+        ///</summary>
+        [JsonProperty("title")]
+        public string Title {get; set;}
+
+        ///<summary>
+        ///Текст сообщения. Максимальная длина: 1000 символов.
+        ///string
+        ///</summary>
+        [JsonProperty("text")]
+        public string Text {get; set;}
+
+        ///<summary>
+        ///Важность сообщения. Допустимые значения: 
+///
+///"important" — Важные сообщения 
+///"standard" — Стандартные сообщения
+        ///string
+        ///</summary>
+        [JsonProperty("importance")]
+        public string Importance {get; set;}
+
+        ///<summary>
+        ///Дата, когда сообщение станет неактуальным. Дата в формате UNIX timestamp или ISO 8601. Например, 1376542800 или 2013-08-15T00:00:00. Должна должна быть в будущем времени.
+        ///timestamp/date
+        ///</summary>
+        [JsonProperty("expires_at")]
+        public string ExpiresAt {get; set;}
+
+        ///<summary>
+        ///Тип сообщения. Допустимые значения: 
+///
+///"general" — Общие сообщения 
+///"training" — Сообщения о тренировке 
+///"meeting" — Сообщения о встрече 
+///"battle" — Сообщения в бою
+        ///string
+        ///</summary>
+        [JsonProperty("type")]
+        public string Type {get; set;}
+    }
+    
+    ///<summary>
+    ///Обновить сообщение на доске объявлений
+    ///</summary>
+    public class ResponseWotbClanmessagesUpdate:IResponse
+    {
+
+        ///<summary>
+        ///Идентификатор сообщения
+        ///</summary>
+        [JsonProperty("message_id")]
+        public Int64? MessageId {get; set;}
+    }
+
+
+    ///<summary>
     /// Статистика по технике игрока
     /// https://ru.wargaming.net/developers/api_reference/wotb/tanks/stats/
     ///</summary>
@@ -20374,19 +21163,19 @@ namespace WGClient.WorldOfTanksBlitz
         ///Общее время в боях в секундах
         ///</summary>
         [JsonProperty("battle_life_time")]
-        public int BattleLifeTime {get; set;}
+        public int? BattleLifeTime {get; set;}
 
         ///<summary>
         ///Время последнего обновления данных о наличии техники в Ангаре. Данные доступны только при наличии действительного access_token для указанного аккаунта.
         ///</summary>
         [JsonProperty("in_garage_updated")]
-        public int InGarageUpdated {get; set;}
+        public int? InGarageUpdated {get; set;}
 
         ///<summary>
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Знаки классности:
@@ -20630,6 +21419,12 @@ namespace WGClient.WorldOfTanksBlitz
         public Dictionary<string,string> Achievements {get; set;}
 
         ///<summary>
+        ///Максимальные значения серийных достижений
+        ///</summary>
+        [JsonProperty("max_series")]
+        public Dictionary<string,string> MaxSeries {get; set;}
+
+        ///<summary>
         ///Идентификатор техники
         ///</summary>
         [JsonProperty("tank_id")]
@@ -20824,7 +21619,7 @@ namespace WGClient.WorldOfWarplanes
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Личный рейтинг
@@ -20836,13 +21631,13 @@ namespace WGClient.WorldOfWarplanes
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Время окончания последней игровой сессии
         ///</summary>
         [JsonProperty("logout_at")]
-        public int LogoutAt {get; set;}
+        public int? LogoutAt {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -20860,7 +21655,7 @@ namespace WGClient.WorldOfWarplanes
         ///Дата обновления информации об игроке
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Достижения игрока
@@ -20921,7 +21716,7 @@ namespace WGClient.WorldOfWarplanes
         ///Время окончания блокировки аккаунта
         ///</summary>
         [JsonProperty("ban_time")]
-        public int BanTime {get; set;}
+        public int? BanTime {get; set;}
 
         ///<summary>
         ///Кредиты
@@ -20963,7 +21758,7 @@ namespace WGClient.WorldOfWarplanes
         ///Срок действия премиум аккаунта
         ///</summary>
         [JsonProperty("premium_expires_at")]
-        public int PremiumExpiresAt {get; set;}
+        public int? PremiumExpiresAt {get; set;}
     }
 
     public class WowpAccountInfoSquad
@@ -21710,7 +22505,7 @@ namespace WGClient.WorldOfWarplanes
         ///Время обновления состояния. Данные доступны только при наличии действительного access_token для указанного аккаунта.
         ///</summary>
         [JsonProperty("in_garage_updated")]
-        public int InGarageUpdated {get; set;}
+        public int? InGarageUpdated {get; set;}
 
         ///<summary>
         ///Поражения
@@ -23314,7 +24109,7 @@ namespace WGClient.WorldOfWarplanes
         ///Дата обновления информации в Энциклопедии
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -25060,7 +25855,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -25152,7 +25946,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -25223,7 +26016,7 @@ namespace WGClient.WorldOfWarships
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Показывает, скрыт ли игровой профиль
@@ -25232,16 +26025,10 @@ namespace WGClient.WorldOfWarships
         public bool HiddenProfile {get; set;}
 
         ///<summary>
-        ///Карма игрока
-        ///</summary>
-        [JsonProperty("karma")]
-        public Int64? Karma {get; set;}
-
-        ///<summary>
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Очки послужного списка
@@ -25259,7 +26046,7 @@ namespace WGClient.WorldOfWarships
         ///Время окончания последней игровой сессии
         ///</summary>
         [JsonProperty("logout_at")]
-        public int LogoutAt {get; set;}
+        public int? LogoutAt {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -25271,13 +26058,13 @@ namespace WGClient.WorldOfWarships
         ///Дата обновления статистики по игроку и кораблям игрока
         ///</summary>
         [JsonProperty("stats_updated_at")]
-        public int StatsUpdatedAt {get; set;}
+        public int? StatsUpdatedAt {get; set;}
 
         ///<summary>
         ///Дата обновления информации об игроке
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Приватные данные игрока
@@ -28181,12 +28968,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -28197,12 +28978,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -28481,12 +29256,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -28497,12 +29266,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -28781,12 +29544,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -28797,12 +29554,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -29101,7 +29852,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -29177,7 +29927,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -29446,7 +30195,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -29474,7 +30222,7 @@ namespace WGClient.WorldOfWarships
         public string GameVersion {get; set;}
 
         ///<summary>
-        ///Cписок поддерживаемых языков
+        ///Список поддерживаемых языков в методах энциклопедии
         ///</summary>
         [JsonProperty("languages")]
         public Dictionary<string,string> Languages {get; set;}
@@ -29507,7 +30255,7 @@ namespace WGClient.WorldOfWarships
         ///Время обновления информации о кораблях
         ///</summary>
         [JsonProperty("ships_updated_at")]
-        public int ShipsUpdatedAt {get; set;}
+        public int? ShipsUpdatedAt {get; set;}
 
         ///<summary>
         ///Изображения классов кораблей
@@ -29573,7 +30321,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -29741,8 +30488,8 @@ namespace WGClient.WorldOfWarships
         ///<summary>
         ///Вспомогательный калибр. Если модуль отсутствует на корабле, полю присваивается значение null.
         ///</summary>
-        [JsonProperty("atba")]
-        public WowsEncyclopediaShipsDefault_profileAtba Atba {get; set;}
+        [JsonProperty("atbas")]
+        public WowsEncyclopediaShipsDefault_profileAtbas Atbas {get; set;}
 
         ///<summary>
         ///Маскировка базовой комплектации
@@ -30088,7 +30835,7 @@ namespace WGClient.WorldOfWarships
     }
 
 
-    public class WowsEncyclopediaShipsDefault_profileAtba
+    public class WowsEncyclopediaShipsDefault_profileAtbas
     {
 
         ///<summary>
@@ -30098,48 +30845,33 @@ namespace WGClient.WorldOfWarships
         public double Distance {get; set;}
 
         ///<summary>
+        ///Слоты орудий
+        ///</summary>
+        [JsonProperty("slots")]
+        public WowsEncyclopediaShipsDefault_profileAtbasSlots Slots {get; set;}
+    }
+    public class WowsEncyclopediaShipsDefault_profileAtbasSlots
+    {
+
+        ///<summary>
+        ///Вероятность пожара при попадании в цель снарядом (%)
+        ///</summary>
+        [JsonProperty("burn_probability")]
+        public double BurnProbability {get; set;}
+
+        ///<summary>
+        ///Максимальный урон
+        ///</summary>
+        [JsonProperty("damage")]
+        public Int64? Damage {get; set;}
+
+        ///<summary>
         ///Скорострельность (выстр / мин)
         ///</summary>
         [JsonProperty("gun_rate")]
         public double GunRate {get; set;}
 
         ///<summary>
-        ///Снаряды
-        ///</summary>
-        [JsonProperty("shells")]
-        public WowsEncyclopediaShipsDefault_profileAtbaShells Shells {get; set;}
-    }
-    public class WowsEncyclopediaShipsDefault_profileAtbaShells
-    {
-
-        ///<summary>
-        ///Бронебойные снаряды
-        ///</summary>
-        [JsonProperty("AP")]
-        public WowsEncyclopediaShipsDefault_profileAtbaShellsAP AP {get; set;}
-
-        ///<summary>
-        ///Осколочно-фугасные снаряды
-        ///</summary>
-        [JsonProperty("HE")]
-        public WowsEncyclopediaShipsDefault_profileAtbaShellsHE HE {get; set;}
-    }
-    public class WowsEncyclopediaShipsDefault_profileAtbaShellsAP
-    {
-
-        ///<summary>
-        ///Вероятность пожара при попадании в цель снарядом (%)
-        ///</summary>
-        [JsonProperty("burn_probability")]
-        public double BurnProbability {get; set;}
-
-        ///<summary>
-        ///Максимальный урон
-        ///</summary>
-        [JsonProperty("damage")]
-        public Int64? Damage {get; set;}
-
-        ///<summary>
         ///Название снаряда
         ///</summary>
         [JsonProperty("name")]
@@ -30151,35 +30883,6 @@ namespace WGClient.WorldOfWarships
         [JsonProperty("type")]
         public string Type {get; set;}
     }
-
-    public class WowsEncyclopediaShipsDefault_profileAtbaShellsHE
-    {
-
-        ///<summary>
-        ///Вероятность пожара при попадании в цель снарядом (%)
-        ///</summary>
-        [JsonProperty("burn_probability")]
-        public double BurnProbability {get; set;}
-
-        ///<summary>
-        ///Максимальный урон
-        ///</summary>
-        [JsonProperty("damage")]
-        public Int64? Damage {get; set;}
-
-        ///<summary>
-        ///Название снаряда
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Тип снаряда
-        ///</summary>
-        [JsonProperty("type")]
-        public string Type {get; set;}
-    }
-
 
 
     public class WowsEncyclopediaShipsDefault_profileConcealment
@@ -30977,7 +31680,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -31104,7 +31806,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -31218,8 +31919,8 @@ namespace WGClient.WorldOfWarships
         ///<summary>
         ///Вспомогательный калибр. Если модуль отсутствует на корабле, полю присваивается значение null.
         ///</summary>
-        [JsonProperty("atba")]
-        public WowsEncyclopediaShipprofileAtba Atba {get; set;}
+        [JsonProperty("atbas")]
+        public WowsEncyclopediaShipprofileAtbas Atbas {get; set;}
 
         ///<summary>
         ///Маскировка базовой комплектации
@@ -31565,7 +32266,7 @@ namespace WGClient.WorldOfWarships
     }
 
 
-    public class WowsEncyclopediaShipprofileAtba
+    public class WowsEncyclopediaShipprofileAtbas
     {
 
         ///<summary>
@@ -31575,48 +32276,33 @@ namespace WGClient.WorldOfWarships
         public double Distance {get; set;}
 
         ///<summary>
+        ///Слоты орудий
+        ///</summary>
+        [JsonProperty("slots")]
+        public WowsEncyclopediaShipprofileAtbasSlots Slots {get; set;}
+    }
+    public class WowsEncyclopediaShipprofileAtbasSlots
+    {
+
+        ///<summary>
+        ///Вероятность пожара при попадании в цель снарядом (%)
+        ///</summary>
+        [JsonProperty("burn_probability")]
+        public double BurnProbability {get; set;}
+
+        ///<summary>
+        ///Максимальный урон
+        ///</summary>
+        [JsonProperty("damage")]
+        public Int64? Damage {get; set;}
+
+        ///<summary>
         ///Скорострельность (выстр / мин)
         ///</summary>
         [JsonProperty("gun_rate")]
         public double GunRate {get; set;}
 
         ///<summary>
-        ///Снаряды
-        ///</summary>
-        [JsonProperty("shells")]
-        public WowsEncyclopediaShipprofileAtbaShells Shells {get; set;}
-    }
-    public class WowsEncyclopediaShipprofileAtbaShells
-    {
-
-        ///<summary>
-        ///Бронебойные снаряды
-        ///</summary>
-        [JsonProperty("AP")]
-        public WowsEncyclopediaShipprofileAtbaShellsAP AP {get; set;}
-
-        ///<summary>
-        ///Осколочно-фугасные снаряды
-        ///</summary>
-        [JsonProperty("HE")]
-        public WowsEncyclopediaShipprofileAtbaShellsHE HE {get; set;}
-    }
-    public class WowsEncyclopediaShipprofileAtbaShellsAP
-    {
-
-        ///<summary>
-        ///Вероятность пожара при попадании в цель снарядом (%)
-        ///</summary>
-        [JsonProperty("burn_probability")]
-        public double BurnProbability {get; set;}
-
-        ///<summary>
-        ///Максимальный урон
-        ///</summary>
-        [JsonProperty("damage")]
-        public Int64? Damage {get; set;}
-
-        ///<summary>
         ///Название снаряда
         ///</summary>
         [JsonProperty("name")]
@@ -31628,35 +32314,6 @@ namespace WGClient.WorldOfWarships
         [JsonProperty("type")]
         public string Type {get; set;}
     }
-
-    public class WowsEncyclopediaShipprofileAtbaShellsHE
-    {
-
-        ///<summary>
-        ///Вероятность пожара при попадании в цель снарядом (%)
-        ///</summary>
-        [JsonProperty("burn_probability")]
-        public double BurnProbability {get; set;}
-
-        ///<summary>
-        ///Максимальный урон
-        ///</summary>
-        [JsonProperty("damage")]
-        public Int64? Damage {get; set;}
-
-        ///<summary>
-        ///Название снаряда
-        ///</summary>
-        [JsonProperty("name")]
-        public string Name {get; set;}
-
-        ///<summary>
-        ///Тип снаряда
-        ///</summary>
-        [JsonProperty("type")]
-        public string Type {get; set;}
-    }
-
 
 
     public class WowsEncyclopediaShipprofileConcealment
@@ -32309,7 +32966,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -32776,7 +33432,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33005,7 +33660,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33521,7 +34175,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33667,7 +34320,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33771,7 +34423,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33820,6 +34471,86 @@ namespace WGClient.WorldOfWarships
 
 
     ///<summary>
+    /// Типы боёв
+    /// https://ru.wargaming.net/developers/api_reference/wows/encyclopedia/battletypes/
+    ///</summary>
+    [Method(Url="api.worldofwarships.ru/wows/encyclopedia/battletypes/")]
+    [DescriptionUrl(Url= "https://ru.wargaming.net/developers/api_reference/wows/encyclopedia/battletypes/")]
+    public class RequestWowsEncyclopediaBattletypes:IRequest
+    {
+
+        ///<summary>
+        ///Обязательный параметер
+        ///Идентификатор приложения
+        ///string
+        ///</summary>
+        [JsonProperty("application_id")]
+        [FieldIsMandatory]
+        public string ApplicationId {get; set;}
+
+        ///<summary>
+        ///Поля ответа. Поля разделяются запятыми. Вложенные поля разделяются точками. Для исключения поля используется знак «-» перед названием поля. Если параметр не указан, возвращаются все поля.
+        ///string, list
+        ///</summary>
+        [JsonProperty("fields")]
+        public string Fields {get; set;}
+
+        ///<summary>
+        ///Язык локализации. Допустимые значения: 
+///
+///"cs" — Čeština 
+///"de" — Deutsch 
+///"en" — English 
+///"es" — Español 
+///"fr" — Français 
+///"ja" — 日本語 
+///"pl" — Polski 
+///"ru" — Русский (используется по умолчанию)
+///"th" — ไทย 
+///"zh-tw" — 繁體中文 
+///"tr" — Türkçe 
+///"zh-cn" — 中文 
+///"pt-br" — Português do Brasil 
+///"es-mx" — Español (México)
+        ///string
+        ///</summary>
+        [JsonProperty("language")]
+        public string Language {get; set;}
+    }
+    
+    ///<summary>
+    ///Типы боёв
+    ///</summary>
+    public class ResponseWowsEncyclopediaBattletypes:IResponse
+    {
+
+        ///<summary>
+        ///Описание типа боя
+        ///</summary>
+        [JsonProperty("description")]
+        public string Description {get; set;}
+
+        ///<summary>
+        ///Ссылка на изображение
+        ///</summary>
+        [JsonProperty("image")]
+        public string Image {get; set;}
+
+        ///<summary>
+        ///Название типа боя
+        ///</summary>
+        [JsonProperty("name")]
+        public string Name {get; set;}
+
+        ///<summary>
+        ///Тег типа боя
+        ///</summary>
+        [JsonProperty("tag")]
+        public string Tag {get; set;}
+    }
+
+
+    ///<summary>
     /// Статистика по кораблям игрока
     /// https://ru.wargaming.net/developers/api_reference/wows/ships/stats/
     ///</summary>
@@ -33846,7 +34577,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -33944,7 +34674,7 @@ namespace WGClient.WorldOfWarships
         ///Время последнего боя
         ///</summary>
         [JsonProperty("last_battle_time")]
-        public int LastBattleTime {get; set;}
+        public int? LastBattleTime {get; set;}
 
         ///<summary>
         ///Идентификатор корабля
@@ -33956,7 +34686,7 @@ namespace WGClient.WorldOfWarships
         ///Дата обновления информации о кораблях
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Статистика в Командных боях.
@@ -36287,12 +37017,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -36303,12 +37027,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -36533,12 +37251,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -36549,12 +37261,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -36779,12 +37485,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -36795,12 +37495,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -37051,7 +37745,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -37089,13 +37782,13 @@ namespace WGClient.WorldOfWarships
         ///Время закрытия сезона
         ///</summary>
         [JsonProperty("close_at")]
-        public int CloseAt {get; set;}
+        public int? CloseAt {get; set;}
 
         ///<summary>
         ///Время окончания сезона
         ///</summary>
         [JsonProperty("finish_at")]
-        public int FinishAt {get; set;}
+        public int? FinishAt {get; set;}
 
         ///<summary>
         ///Максимальный уровень корабля в сезоне
@@ -37131,14 +37824,36 @@ namespace WGClient.WorldOfWarships
         ///Время открытия сезона
         ///</summary>
         [JsonProperty("start_at")]
-        public int StartAt {get; set;}
+        public int? StartAt {get; set;}
 
         ///<summary>
         ///Начальный ранг в сезоне
         ///</summary>
         [JsonProperty("start_rank")]
         public Int64? StartRank {get; set;}
+
+        ///<summary>
+        ///Изображения
+        ///</summary>
+        [JsonProperty("images")]
+        public WowsSeasonsInfoImages Images {get; set;}
     }
+    public class WowsSeasonsInfoImages
+    {
+
+        ///<summary>
+        ///Фоновое изображение
+        ///</summary>
+        [JsonProperty("background")]
+        public string Background {get; set;}
+
+        ///<summary>
+        ///Изображение знаков отличия
+        ///</summary>
+        [JsonProperty("insignia")]
+        public string Insignia {get; set;}
+    }
+
 
 
     ///<summary>
@@ -37168,7 +37883,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -37271,12 +37985,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -37287,12 +37995,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -37517,12 +38219,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -37533,12 +38229,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -37763,12 +38453,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -37779,12 +38463,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -38029,7 +38707,6 @@ namespace WGClient.WorldOfWarships
 ///"es" — Español 
 ///"fr" — Français 
 ///"ja" — 日本語 
-///"ko" — 한국어 
 ///"pl" — Polski 
 ///"ru" — Русский (используется по умолчанию)
 ///"th" — ไทย 
@@ -38125,12 +38802,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -38141,12 +38812,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -38371,12 +39036,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -38387,12 +39046,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -38651,12 +39304,6 @@ namespace WGClient.WorldOfWarships
         public Int64? Battles {get; set;}
 
         ///<summary>
-        ///Очки захвата базы
-        ///</summary>
-        [JsonProperty("capture_points")]
-        public Int64? CapturePoints {get; set;}
-
-        ///<summary>
         ///Количество нанесённых повреждений
         ///</summary>
         [JsonProperty("damage_dealt")]
@@ -38667,12 +39314,6 @@ namespace WGClient.WorldOfWarships
         ///</summary>
         [JsonProperty("draws")]
         public Int64? Draws {get; set;}
-
-        ///<summary>
-        ///Очки защиты базы
-        ///</summary>
-        [JsonProperty("dropped_capture_points")]
-        public Int64? DroppedCapturePoints {get; set;}
 
         ///<summary>
         ///Потоплено кораблей
@@ -38995,7 +39636,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Список игр, в которые играл игрок
@@ -39089,7 +39730,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания аккаунта игрока
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Список игр, в которые играл игрок
@@ -39128,7 +39769,7 @@ namespace WGClient.Wargaming.NET
         ///Срок действия премиум аккаунта
         ///</summary>
         [JsonProperty("premium_expires_at")]
-        public int PremiumExpiresAt {get; set;}
+        public int? PremiumExpiresAt {get; set;}
     }
 
 
@@ -39266,7 +39907,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания публикации в формате UNIX timestamp или ISO 8601
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Текст публикации
@@ -39460,7 +40101,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания публикации в формате UNIX timestamp или ISO 8601
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Текст публикации
@@ -39628,7 +40269,7 @@ namespace WGClient.Wargaming.NET
         ///Дата комментария
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -39867,7 +40508,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания публикации в формате UNIX timestamp или ISO 8601
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Текст публикации
@@ -40033,7 +40674,7 @@ namespace WGClient.Wargaming.NET
         ///Дата комментария
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Имя игрока
@@ -40227,7 +40868,7 @@ namespace WGClient.Wargaming.NET
         ///Дата последнего обновления информации о лиге
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Список сезонов лиги
@@ -40381,7 +41022,7 @@ namespace WGClient.Wargaming.NET
         ///Дата обновления информации о матчах турнира
         ///</summary>
         [JsonProperty("matches_updated_at")]
-        public int MatchesUpdatedAt {get; set;}
+        public int? MatchesUpdatedAt {get; set;}
 
         ///<summary>
         ///Локализованное название турнира
@@ -40429,7 +41070,7 @@ namespace WGClient.Wargaming.NET
         ///Дата обновления информации о турнире
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -40537,7 +41178,7 @@ namespace WGClient.Wargaming.NET
         ///Время начала матча. Если матч ещё не начался, полю присваивается значение 'null'.
         ///</summary>
         [JsonProperty("start_at")]
-        public int StartAt {get; set;}
+        public int? StartAt {get; set;}
 
         ///<summary>
         ///Cледующий матч проигравшего
@@ -40736,7 +41377,7 @@ namespace WGClient.Wargaming.NET
         ///Время начала матча. Если матч ещё не начался, полю присваивается значение 'null'.
         ///</summary>
         [JsonProperty("start_at")]
-        public int StartAt {get; set;}
+        public int? StartAt {get; set;}
 
         ///<summary>
         ///Идентификатор турнира
@@ -40748,7 +41389,7 @@ namespace WGClient.Wargaming.NET
         ///Дата последнего обновления информации о матче
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -40996,7 +41637,7 @@ namespace WGClient.Wargaming.NET
         ///Дата последнего обновления информации о команде
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Ссылки на страницы команды в социальных сетях
@@ -41752,7 +42393,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Количество игроков клана
@@ -41922,7 +42563,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Идентификатор игрока, создавшего клан
@@ -42000,7 +42641,7 @@ namespace WGClient.Wargaming.NET
         ///Время последнего переименования клана в UTC
         ///</summary>
         [JsonProperty("renamed_at")]
-        public int RenamedAt {get; set;}
+        public int? RenamedAt {get; set;}
 
         ///<summary>
         ///Тег клана
@@ -42012,7 +42653,7 @@ namespace WGClient.Wargaming.NET
         ///Время обновления информации о клане
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
 
         ///<summary>
         ///Информация об эмблемах клана в играх и на клановом портале
@@ -42085,7 +42726,7 @@ namespace WGClient.Wargaming.NET
         ///Дата вступления в клан
         ///</summary>
         [JsonProperty("joined_at")]
-        public int JoinedAt {get; set;}
+        public int? JoinedAt {get; set;}
 
         ///<summary>
         ///Техническое название должности
@@ -42176,7 +42817,7 @@ namespace WGClient.Wargaming.NET
         ///Дата вступления в клан
         ///</summary>
         [JsonProperty("joined_at")]
-        public int JoinedAt {get; set;}
+        public int? JoinedAt {get; set;}
 
         ///<summary>
         ///Техническое название должности
@@ -42215,7 +42856,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания клана
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Количество игроков клана
@@ -42389,7 +43030,7 @@ namespace WGClient.Wargaming.NET
         ///Дата создания объявления
         ///</summary>
         [JsonProperty("created_at")]
-        public int CreatedAt {get; set;}
+        public int? CreatedAt {get; set;}
 
         ///<summary>
         ///Идентификатор игрока, изменившего объявление
@@ -42413,7 +43054,7 @@ namespace WGClient.Wargaming.NET
         ///Дата обновления сообщения
         ///</summary>
         [JsonProperty("updated_at")]
-        public int UpdatedAt {get; set;}
+        public int? UpdatedAt {get; set;}
     }
 
 
@@ -42723,7 +43364,7 @@ namespace WGClient.Wargaming.NET
         ///Дата и время публикации
         ///</summary>
         [JsonProperty("published_at")]
-        public int PublishedAt {get; set;}
+        public int? PublishedAt {get; set;}
 
         ///<summary>
         ///Локализованное название видео
